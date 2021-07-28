@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AboutFragment"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="О нас:"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="На данный момент Trade App является дипломным проектом студента СПБКИТ по теме: «Разработка мобильного приложения для трейда» в специальности 09.02.03 «Программирование в компьютерных системах»"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Основной целью разрабатываемого дипломного проекта является создание удобного приложения, которое бы максимально облегчало для пользователя процесс обмена неактульной для него вещи на необходимую или же просто желанную. "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Также, приложение несет дополнительной целью популяризацию «Разумного потребления», для уменьшения наносимого планете вреда, путем снижения количества выбрасываемых вещей."
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Выполнил: Шаагин А.А."
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Руководитель дипломного проекта: Матысик И.А."
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Консультант по экономической части: Львова Т.В."
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Нормоконтроль: Горабец Н.Е."
+        />
+
+
+</LinearLayout>

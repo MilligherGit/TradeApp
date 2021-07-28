@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CollectionActivity.CollectionFragment">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Поиск..."
+        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:id="@+id/search_users"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_below="@id/search_users"
+        android:layout_above="@id/addCollectionButton"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addCollectionButton"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/black"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

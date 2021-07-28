@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Trade App</string>
+    <string name="txt_login">Введите логин</string>
+    <string name="btn_login">Войти</string>
+    <string name="toolBar_label">Меню</string>
+    <string name="profile">Профиль</string>
+    <string name="notifications">Уведомления</string>
+    <string name="collections">Коллекция</string>
+    <string name="mail">Чат</string>
+    <string name="orders">Трейды</string>
+    <string name="others">Прочее</string>
+    <string name="settings">Настройки</string>
+    <string name="support">Поддержка</string>
+    <string name="about">О нас</string>
+    <string name="guest">Гость</string>
+    <string name="verified">Онлайн</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Главная</string>
+    <string name="hint_msg">Введите сообщение...</string>
+    <string name="hint_user_name">Введите имя пользователя...</string>
+    <string name="registration">Регистрация</string>
+    <string name="hint_email">Введите email...</string>
+    <string name="hint_password">Введите пароль...</string>
+    <string name="login">Вход</string>
+    <string name="exit">Выход</string>
+    <string name="back">Назад</string>
+    <string name="users">Пользователи</string>
+    <string name="chats">Чаты</string>
+    <string name="username">Имя</string>
+    <string name="email">Email</string>
+    <string name="add">Добавить</string>
+    <string name="add_into_collection">Добавление в коллекцию</string>
+    <string name="for_free">Даром</string>
+    <string name="enter_name">Введите название...</string>
+    <string name="enter_description">Введите описание...</string>
+    <string name="add_btn">Добавить</string>
+    <string name="trade">Меняться</string>
+    <string name="trade_want">Я хочу обменяться</string>
+    <string name="free_want">Я хочу забрать</string>
+    <string name="delete">Удалить</string>
+    <string name="link"><a href="https://vk.com/milligher/">https://vk.com/milligher/</a></string>
+    <string name="pochta1"><a href="robot_171297@mail.ru">robot_171297@mail.ru</a></string>
+    <string name="pochta2"><a href="6sasori9@gmail.com">6sasori9@gmail.com</a></string>
+
+</resources>

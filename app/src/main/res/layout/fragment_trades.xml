@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Забрано"
+        android:layout_centerHorizontal="true"
+        android:padding="20sp"
+        android:textStyle="bold"
+        android:id="@+id/txt1"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/txt1"
+        android:id="@+id/recycler_view"
+        android:padding="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отдано"
+        android:layout_centerHorizontal="true"
+        android:padding="20sp"
+        android:layout_below="@+id/recycler_view"
+        android:textStyle="bold"
+        android:id="@+id/txt2"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:id="@+id/recycler_view2"
+        android:padding="20sp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CollectionActivity.CollectionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/collection_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:onClick="onBackClick"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <ImageView
+            android:id="@+id/imageMenu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBackClick"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_below="@id/collection_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Поиск..."
+        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:id="@+id/search_users"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_below="@id/search_users"
+        android:layout_above="@id/addCollectionButton"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addCollectionButton"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/black"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:onClick="onAddCollectionButtonClick"
+        />
+
+</RelativeLayout>

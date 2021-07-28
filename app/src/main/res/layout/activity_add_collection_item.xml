@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CollectionActivity.AddCollectionItemActivity">
+
+    <!-- Кнопка назад-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/add_collection_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:onClick="onBackClick"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <ImageView
+            android:id="@+id/imageMenu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/app_name"
+            android:onClick="onBackClick"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/add_collection_toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="30dp"
+        android:layout_below="@id/add_collection_toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_into_collection"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <!-- Сюда ставим картинку-->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/item_image"
+            android:layout_marginVertical="20dp"
+            android:src="@drawable/collections"/>
+
+        <!-- Сюда вводим название-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_name"
+            android:layout_marginTop="10dp"
+            app:met_floatingLabel="normal"
+            android:hint="@string/enter_name"
+            android:textColor="@color/white"
+            app:met_baseColor="@color/white"
+            app:met_textColorHint="@color/white"
+            android:layout_marginVertical="20dp"
+            />
+
+        <!-- Сюда вводим описание-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/item_description"
+            android:layout_marginTop="10dp"
+            app:met_floatingLabel="normal"
+            android:hint="@string/enter_description"
+            android:textColor="@color/white"
+            app:met_baseColor="@color/white"
+            app:met_textColorHint="@color/white"
+            android:layout_marginVertical="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите до пяти тегов"
+            android:textSize="25sp"/>
+
+        <!-- Сюда вводим до пяти тегов-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tag1"
+            android:text="Тег 1:"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/edit_tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tag1"
+            android:layout_toEndOf="@id/tag1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="Введите первый тег..."
+            android:digits="abcdefghijklmnopqrstuvwxyzабвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag2"
+                android:text="Тег 2:"
+                android:textColor="@color/white"
+                android:layout_below="@+id/tag1"
+                android:layout_marginTop="25dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_tag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tag2"
+                android:layout_toEndOf="@id/tag2"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/edit_tag1"
+                android:hint="Введите второй тег..."
+                android:digits="abcdefghijklmnopqrstuvwxyzабвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag3"
+                android:text="Тег 3:"
+                android:textColor="@color/white"
+                android:layout_below="@+id/tag2"
+                android:layout_marginTop="25dp"
+
+                />
+
+            <EditText
+                android:id="@+id/edit_tag3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tag3"
+                android:layout_toEndOf="@id/tag3"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/edit_tag2"
+                android:hint="Введите третий тег..."
+                android:digits="abcdefghijklmnopqrstuvwxyzабвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag4"
+                android:text="Тег 4:"
+                android:textColor="@color/white"
+                android:layout_below="@+id/tag3"
+                android:layout_marginTop="25dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_tag4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tag4"
+                android:layout_toEndOf="@id/tag4"
+                android:layout_below="@+id/edit_tag3"
+                android:layout_marginLeft="10dp"
+                android:hint="Введите четвертый тег..."
+                android:digits="abcdefghijklmnopqrstuvwxyzабвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag5"
+                android:text="Тег 5:"
+                android:textColor="@color/white"
+                android:layout_below="@+id/tag4"
+                android:layout_marginTop="25dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_tag5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tag4"
+                android:layout_toEndOf="@id/tag4"
+                android:layout_below="@+id/edit_tag4"
+                android:layout_marginLeft="10dp"
+                android:hint="Введите пятый тег..."
+                android:digits="abcdefghijklmnopqrstuvwxyzабвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+                />
+
+        </RelativeLayout>
+
+        <!-- Даром или на обмен-->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_compat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/for_free"
+            android:layout_marginTop="10dp"
+            android:textOff="Нет"
+            android:textOn="Да"
+            app:showText="true"/>
+
+        <!-- Сохраняем все в базу -->
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/teal_700"
+            android:text="@string/add_btn"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/black" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
